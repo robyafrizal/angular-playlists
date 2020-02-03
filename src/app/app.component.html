@@ -1,47 +1,118 @@
 <div class="container">
-  <h1 class="mat-h1 main-title">[NPC] Beginner Merchant</h1>
+  <h1 class="mat-display-2 main-title">The Playlists</h1>
   <h3 class="mat-h3 test-description">
-    Hello Adventurer, welcome to the town of Angular! <br />Here you can explore
-    all the exciting stuff like meeting weird monster, learning new spell, and
-    discovering rare item. <br />But first, you need some weapon/spell to
-    accompany you along the way! <br />I will give you 1000 gold, so choose your
-    weapon/spell wisely~
+    Here you can create your own playlist, edit your already existing playlist,
+    add songs, and show it to the world!
   </h3>
+  <button
+    color="primary"
+    mat-raised-button=""
+    class="mat-raised-button mat-button-base mat-primary"
+    ng-reflect-color="primary"
+  >
+    <span class="mat-button-wrapper"
+      ><mat-icon
+        class="mat-icon notranslate material-icons mat-icon-no-color"
+        role="img"
+        aria-hidden="true"
+        >playlist_add</mat-icon
+      >
+      New Playlist
+    </span>
+    <div
+      class="mat-button-ripple mat-ripple"
+      matripple=""
+      ng-reflect-centered="false"
+      ng-reflect-disabled="false"
+      ng-reflect-trigger="[object HTMLButtonElement]"
+    ></div>
+    <div class="mat-button-focus-overlay"></div>
+  </button>
+  <mat-divider
+    class="divider mat-divider mat-divider-horizontal"
+    role="separator"
+    aria-orientation="horizontal"
+  ></mat-divider>
 
-  <div class="card-wrapper">
-    <mat-card class="item-card mat-card"
-      ><mat-card-header class="mat-card-header"
-        ><div class="mat-card-header-text">
-          <mat-card-title class="mat-card-title">Kokorowatari</mat-card-title
-          ><mat-card-subtitle class="mat-card-subtitle"
-            >Price: 444</mat-card-subtitle
-          >
-        </div></mat-card-header
-      >
-      <div class="img-wrapper">
-        <img
-          class="mat-card-image"
-          mat-card-image=""
-          src="https://i.imgur.com/POR1PVd.jpg"
-        />
-      </div>
-      <mat-card-content class="mat-card-content"
+  <div class="playlist-card">
+    <mat-card class="mat-card"
+      ><mat-card-title class="mat-card-title">Kopikustik</mat-card-title
+      ><mat-card-subtitle class="mat-card-subtitle">
+        total 2 songs, 5 minutes </mat-card-subtitle
+      ><mat-card-content class="mat-card-content"
         ><p>
-          Demon sword that harms and effectively kills oddities. The sword
-          belonged to a powerful vampire named Kiss-Shot Acerola-Orion
-          Heart-Under-Blade.
-        </p></mat-card-content
-      ><mat-card-actions class="right-button mat-card-actions"
+          More than a coffee, this is all of your favorite accoustic songs.
+        </p>
+        <mat-divider
+          class="mat-divider mat-divider-horizontal"
+          role="separator"
+          aria-orientation="horizontal"
+        ></mat-divider
+        ><mat-list class="mat-list mat-list-base"
+          ><mat-list-item
+            class="mat-list-item mat-2-line mat-list-item-avatar mat-list-item-with-avatar"
+            ><div class="mat-list-item-content">
+              <div
+                class="mat-list-item-ripple mat-ripple"
+                mat-ripple=""
+                ng-reflect-disabled="true"
+                ng-reflect-trigger="[object HTMLElement]"
+              ></div>
+              <mat-icon
+                class="mat-icon notranslate mat-list-icon material-icons mat-icon-no-color"
+                mat-list-icon=""
+                role="img"
+                aria-hidden="true"
+                >music_note</mat-icon
+              >
+              <div class="mat-list-text">
+                <h4 class="mat-line" mat-line="">Cigarettes of ours</h4>
+                <p class="mat-line" mat-line="">
+                  by Ardhito Pramono · 3 minutes
+                </p>
+              </div>
+            </div></mat-list-item
+          ><mat-list-item
+            class="mat-list-item mat-2-line mat-list-item-avatar mat-list-item-with-avatar"
+            ><div class="mat-list-item-content">
+              <div
+                class="mat-list-item-ripple mat-ripple"
+                mat-ripple=""
+                ng-reflect-disabled="true"
+                ng-reflect-trigger="[object HTMLElement]"
+              ></div>
+              <mat-icon
+                class="mat-icon notranslate mat-list-icon material-icons mat-icon-no-color"
+                mat-list-icon=""
+                role="img"
+                aria-hidden="true"
+                >music_note</mat-icon
+              >
+              <div class="mat-list-text">
+                <h4 class="mat-line" mat-line="">Walking Back Home</h4>
+                <p class="mat-line" mat-line="">by Vira Talisa · 2 minutes</p>
+              </div>
+            </div></mat-list-item
+          ></mat-list
+        ></mat-card-content
+      ><mat-card-actions class="mat-card-actions"
+        ><button
+          color="warn"
+          mat-button=""
+          class="mat-button mat-button-base mat-warn"
+          ng-reflect-color="warn"
+        >
+          <span class="mat-button-wrapper">DELETE</span>
+          <div
+            class="mat-button-ripple mat-ripple"
+            matripple=""
+            ng-reflect-centered="false"
+            ng-reflect-disabled="false"
+            ng-reflect-trigger="[object HTMLButtonElement]"
+          ></div>
+          <div class="mat-button-focus-overlay"></div></button
         ><button mat-button="" class="mat-button mat-button-base">
-          <span class="mat-button-wrapper"
-            ><mat-icon
-              class="mat-icon notranslate material-icons mat-icon-no-color"
-              role="img"
-              aria-hidden="true"
-              >add_shopping_cart</mat-icon
-            >
-            Add to cart
-          </span>
+          <span class="mat-button-wrapper">EDIT</span>
           <div
             class="mat-button-ripple mat-ripple"
             matripple=""
@@ -49,258 +120,120 @@
             ng-reflect-disabled="false"
             ng-reflect-trigger="[object HTMLButtonElement]"
           ></div>
-          <div class="mat-button-focus-overlay"></div>
-        </button> </mat-card-actions></mat-card
-    ><mat-card class="item-card mat-card"
-      ><mat-card-header class="mat-card-header"
-        ><div class="mat-card-header-text">
-          <mat-card-title class="mat-card-title">Star Platinum</mat-card-title
-          ><mat-card-subtitle class="mat-card-subtitle"
-            >Price: 555</mat-card-subtitle
-          >
-        </div></mat-card-header
-      >
-      <div class="img-wrapper">
-        <img
-          class="mat-card-image"
-          mat-card-image=""
-          src="https://i.imgur.com/cdJ6GDW.jpg"
-        />
-      </div>
-      <mat-card-content class="mat-card-content"
-        ><p>
-          Star Platinum is the Stand of Kujo Jotaro. It has long, flowing hair,
-          and resembling a tall, well-built man. It is silent, except when it
-          throws punches, during which it cries "ORAORAORA" loudly and
-          repeatedly.
-        </p></mat-card-content
-      ><mat-card-actions class="right-button mat-card-actions"
-        ><button mat-button="" class="mat-button mat-button-base">
-          <span class="mat-button-wrapper"
-            ><mat-icon
-              class="mat-icon notranslate material-icons mat-icon-no-color"
-              role="img"
-              aria-hidden="true"
-              >add_shopping_cart</mat-icon
-            >
-            Add to cart
-          </span>
           <div
-            class="mat-button-ripple mat-ripple"
-            matripple=""
-            ng-reflect-centered="false"
-            ng-reflect-disabled="false"
-            ng-reflect-trigger="[object HTMLButtonElement]"
-          ></div>
-          <div class="mat-button-focus-overlay"></div>
-        </button> </mat-card-actions></mat-card
-    ><mat-card class="item-card mat-card"
-      ><mat-card-header class="mat-card-header"
-        ><div class="mat-card-header-text">
-          <mat-card-title class="mat-card-title">The World</mat-card-title
-          ><mat-card-subtitle class="mat-card-subtitle"
-            >Price: 500</mat-card-subtitle
-          >
-        </div></mat-card-header
-      >
-      <div class="img-wrapper">
-        <img
-          class="mat-card-image"
-          mat-card-image=""
-          src="https://i.imgur.com/3KBm7hK.jpg"
-        />
-      </div>
-      <mat-card-content class="mat-card-content"
-        ><p>
-          The World is the Stand of DIO. The World shows no particular
-          personality, although it occasionally smiles as it pummels others,
-          hinting that it may be a rather cruel entity that takes pleasure in
-          causing pain. Its Stand cry, seemingly communicated by DIO, is Muda
-          Muda Muda!
-        </p></mat-card-content
-      ><mat-card-actions class="right-button mat-card-actions"
-        ><button mat-button="" class="mat-button mat-button-base">
-          <span class="mat-button-wrapper"
-            ><mat-icon
-              class="mat-icon notranslate material-icons mat-icon-no-color"
-              role="img"
-              aria-hidden="true"
-              >add_shopping_cart</mat-icon
-            >
-            Add to cart
-          </span>
-          <div
-            class="mat-button-ripple mat-ripple"
-            matripple=""
-            ng-reflect-centered="false"
-            ng-reflect-disabled="false"
-            ng-reflect-trigger="[object HTMLButtonElement]"
-          ></div>
-          <div class="mat-button-focus-overlay"></div>
-        </button> </mat-card-actions></mat-card
-    ><mat-card class="item-card mat-card"
-      ><mat-card-header class="mat-card-header"
-        ><div class="mat-card-header-text">
-          <mat-card-title class="mat-card-title"
-            >3D Maneuver Gear</mat-card-title
-          ><mat-card-subtitle class="mat-card-subtitle"
-            >Price: 200</mat-card-subtitle
-          >
-        </div></mat-card-header
-      >
-      <div class="img-wrapper">
-        <img
-          class="mat-card-image"
-          mat-card-image=""
-          src="https://i.imgur.com/9E0Agn2.jpg"
-        />
-      </div>
-      <mat-card-content class="mat-card-content"
-        ><p>
-          The vertical maneuvering equipment is a set of equipment developed by
-          humans allowing for great mobility. The equipment enables the user to
-          fight in a 3D space as opposed to a 2D one. The equipment itself takes
-          the form of a body harness that encompasses much of the body below the
-          neck.
-        </p></mat-card-content
-      ><mat-card-actions class="right-button mat-card-actions">
-        <button mat-button="" class="mat-button mat-button-base">
-          <span class="mat-button-wrapper"
-            ><mat-icon
-              class="mat-icon notranslate material-icons mat-icon-no-color"
-              role="img"
-              aria-hidden="true"
-              >add_shopping_cart</mat-icon
-            >
-            Add to cart
-          </span>
-          <div
-            class="mat-button-ripple mat-ripple"
-            matripple=""
-            ng-reflect-centered="false"
-            ng-reflect-disabled="false"
-            ng-reflect-trigger="[object HTMLButtonElement]"
-          ></div>
-          <div class="mat-button-focus-overlay"></div>
-        </button> </mat-card-actions></mat-card
-    ><mat-card class="item-card mat-card"
-      ><mat-card-header class="mat-card-header"
-        ><div class="mat-card-header-text">
-          <mat-card-title class="mat-card-title">Excalibur</mat-card-title
-          ><mat-card-subtitle class="mat-card-subtitle"
-            >Price: 300</mat-card-subtitle
-          >
-        </div></mat-card-header
-      >
-      <div class="img-wrapper">
-        <img
-          class="mat-card-image"
-          mat-card-image=""
-          src="https://i.imgur.com/nutN73L.jpg"
-        />
-      </div>
-      <mat-card-content class="mat-card-content"
-        ><p>
-          Excalibur: Sword of Promised Victory is the strongest and most
-          majestic holy sword that symbolizes King Arthur. As that which can be
-          called the physical actualization of her ideals and the symbol of her
-          heroism, it is her greatest and most powerful Noble Phantasm.
-        </p></mat-card-content
-      ><mat-card-actions class="right-button mat-card-actions"
-        ><button mat-button="" class="mat-button mat-button-base">
-          <span class="mat-button-wrapper"
-            ><mat-icon
-              class="mat-icon notranslate material-icons mat-icon-no-color"
-              role="img"
-              aria-hidden="true"
-              >add_shopping_cart</mat-icon
-            >
-            Add to cart
-          </span>
-          <div
-            class="mat-button-ripple mat-ripple"
-            matripple=""
-            ng-reflect-centered="false"
-            ng-reflect-disabled="false"
-            ng-reflect-trigger="[object HTMLButtonElement]"
-          ></div>
-          <div class="mat-button-focus-overlay"></div>
-        </button> </mat-card-actions></mat-card
-    ><mat-card class="item-card mat-card"
-      ><mat-card-header class="mat-card-header"
-        ><div class="mat-card-header-text">
-          <mat-card-title class="mat-card-title">Dragon Slayer</mat-card-title
-          ><mat-card-subtitle class="mat-card-subtitle"
-            >Price: 450</mat-card-subtitle
-          >
-        </div></mat-card-header
-      >
-      <div class="img-wrapper">
-        <img
-          class="mat-card-image"
-          mat-card-image=""
-          src="https://i.imgur.com/WPdYq5Z.jpg"
-        />
-      </div>
-      <mat-card-content class="mat-card-content"
-        ><p>
-          It was too big to be called a sword. Massive, thick, heavy, and far
-          too rough. Indeed, it was a heap of raw iron. The Dragon Slayer is the
-          massive sword Guts has wielded as his signature weapon since surviving
-          the Eclipse.
-        </p></mat-card-content
-      ><mat-card-actions class="right-button mat-card-actions">
-        <button mat-button="" class="mat-button mat-button-base">
-          <span class="mat-button-wrapper"
-            ><mat-icon
-              class="mat-icon notranslate material-icons mat-icon-no-color"
-              role="img"
-              aria-hidden="true"
-              >add_shopping_cart</mat-icon
-            >
-            Add to cart
-          </span>
-          <div
-            class="mat-button-ripple mat-ripple"
-            matripple=""
-            ng-reflect-centered="false"
-            ng-reflect-disabled="false"
-            ng-reflect-trigger="[object HTMLButtonElement]"
-          ></div>
-          <div class="mat-button-focus-overlay"></div>
-        </button> </mat-card-actions
+            class="mat-button-focus-overlay"
+          ></div></button></mat-card-actions
     ></mat-card>
   </div>
 
-  <div class="items-cart">
-    <h3>Added to cart:</h3>
-    <mat-divider
-      class="mat-divider mat-divider-horizontal"
-      role="separator"
-      aria-orientation="horizontal"
-    ></mat-divider>
-    <div class="item-cart-list">
-      <span class="cart-item-name"><strong>Total: </strong></span
-      ><span class="cart-item-price">0</span>
-    </div>
-    <div style="width: 100%;">
-      <button
-        color="primary"
-        mat-raised-button=""
-        style="width: 100%;"
-        class="mat-raised-button mat-button-base mat-primary"
-        ng-reflect-color="primary"
-      >
-        <span class="mat-button-wrapper">Buy</span>
-        <div
-          class="mat-button-ripple mat-ripple"
-          matripple=""
-          ng-reflect-centered="false"
-          ng-reflect-disabled="false"
-          ng-reflect-trigger="[object HTMLButtonElement]"
-        ></div>
-        <div class="mat-button-focus-overlay"></div>
-      </button>
-    </div>
+  <div class="playlist-card">
+    <mat-card class="mat-card"
+      ><mat-card-title class="mat-card-title">Anime Hits</mat-card-title
+      ><mat-card-subtitle class="mat-card-subtitle">
+        total 3 songs, 13 minutes </mat-card-subtitle
+      ><mat-card-content class="mat-card-content"
+        ><p>Listen to your favorite Anime songs, all in one playlist.</p>
+        <mat-divider
+          class="mat-divider mat-divider-horizontal"
+          role="separator"
+          aria-orientation="horizontal"
+        ></mat-divider
+        ><mat-list class="mat-list mat-list-base"
+          ><mat-list-item
+            class="mat-list-item mat-2-line mat-list-item-avatar mat-list-item-with-avatar"
+            ><div class="mat-list-item-content">
+              <div
+                class="mat-list-item-ripple mat-ripple"
+                mat-ripple=""
+                ng-reflect-disabled="true"
+                ng-reflect-trigger="[object HTMLElement]"
+              ></div>
+              <mat-icon
+                class="mat-icon notranslate mat-list-icon material-icons mat-icon-no-color"
+                mat-list-icon=""
+                role="img"
+                aria-hidden="true"
+                >music_note</mat-icon
+              >
+              <div class="mat-list-text">
+                <h4 class="mat-line" mat-line="">Renai Circulation</h4>
+                <p class="mat-line" mat-line="">by Kana Hanazawa · 4 minutes</p>
+              </div>
+            </div></mat-list-item
+          ><mat-list-item
+            class="mat-list-item mat-2-line mat-list-item-avatar mat-list-item-with-avatar"
+            ><div class="mat-list-item-content">
+              <div
+                class="mat-list-item-ripple mat-ripple"
+                mat-ripple=""
+                ng-reflect-disabled="true"
+                ng-reflect-trigger="[object HTMLElement]"
+              ></div>
+              <mat-icon
+                class="mat-icon notranslate mat-list-icon material-icons mat-icon-no-color"
+                mat-list-icon=""
+                role="img"
+                aria-hidden="true"
+                >music_note</mat-icon
+              >
+              <div class="mat-list-text">
+                <h4 class="mat-line" mat-line="">Platinum Disco</h4>
+                <p class="mat-line" mat-line="">
+                  by Tsukihi Phoenix · 4 minutes
+                </p>
+              </div>
+            </div></mat-list-item
+          ><mat-list-item
+            class="mat-list-item mat-2-line mat-list-item-avatar mat-list-item-with-avatar"
+            ><div class="mat-list-item-content">
+              <div
+                class="mat-list-item-ripple mat-ripple"
+                mat-ripple=""
+                ng-reflect-disabled="true"
+                ng-reflect-trigger="[object HTMLElement]"
+              ></div>
+              <mat-icon
+                class="mat-icon notranslate mat-list-icon material-icons mat-icon-no-color"
+                mat-list-icon=""
+                role="img"
+                aria-hidden="true"
+                >music_note</mat-icon
+              >
+              <div class="mat-list-text">
+                <h4 class="mat-line" mat-line="">Silhouette</h4>
+                <p class="mat-line" mat-line="">by KANA-BOON · 5 minutes</p>
+              </div>
+            </div></mat-list-item
+          ></mat-list
+        ></mat-card-content
+      ><mat-card-actions class="mat-card-actions"
+        ><button
+          color="warn"
+          mat-button=""
+          class="mat-button mat-button-base mat-warn"
+          ng-reflect-color="warn"
+        >
+          <span class="mat-button-wrapper">DELETE</span>
+          <div
+            class="mat-button-ripple mat-ripple"
+            matripple=""
+            ng-reflect-centered="false"
+            ng-reflect-disabled="false"
+            ng-reflect-trigger="[object HTMLButtonElement]"
+          ></div>
+          <div class="mat-button-focus-overlay"></div></button
+        ><button mat-button="" class="mat-button mat-button-base">
+          <span class="mat-button-wrapper">EDIT</span>
+          <div
+            class="mat-button-ripple mat-ripple"
+            matripple=""
+            ng-reflect-centered="false"
+            ng-reflect-disabled="false"
+            ng-reflect-trigger="[object HTMLButtonElement]"
+          ></div>
+          <div
+            class="mat-button-focus-overlay"
+          ></div></button></mat-card-actions
+    ></mat-card>
   </div>
 </div>
