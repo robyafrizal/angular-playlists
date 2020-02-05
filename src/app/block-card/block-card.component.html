@@ -1,0 +1,73 @@
+<!-- <mat-card class="card">
+  <mat-card-title>Block #{{ blockData.blockNumber }}</mat-card-title>
+  <p>{{ blockData.transactions | json }}</p>
+  <p>PrevBlock: {{ blockData.previousBlock }}</p>
+  <p>Hash: {{ blockData.blockHash }}</p>
+</mat-card> -->
+
+<div class="playlist-card">
+  <mat-card class="mat-card"
+    ><mat-card-title class="mat-card-title">Kopikustik</mat-card-title
+    ><mat-card-subtitle class="mat-card-subtitle">
+      total 2 songs, 5 minutes </mat-card-subtitle
+    ><mat-card-content class="mat-card-content"
+      ><p>
+        More than a coffee, this is all of your favorite accoustic songs.
+      </p>
+      <mat-divider
+        class="mat-divider mat-divider-horizontal"
+        role="separator"
+        aria-orientation="horizontal"
+      ></mat-divider
+      ><mat-list class="mat-list mat-list-base"
+        ><mat-list-item
+          class="mat-list-item mat-2-line mat-list-item-avatar mat-list-item-with-avatar"
+          ><div class="mat-list-item-content">
+            <div class="mat-list-item-ripple mat-ripple"></div>
+            <mat-icon
+              class="mat-icon notranslate mat-list-icon material-icons mat-icon-no-color"
+              mat-list-icon=""
+              role="img"
+              aria-hidden="true"
+              >music_note</mat-icon
+            >
+            <div class="mat-list-text">
+              <h4 class="mat-line">Cigarettes of ours</h4>
+              <p class="mat-line">
+                by Ardhito Pramono · 3 minutes
+              </p>
+            </div>
+          </div></mat-list-item
+        ><mat-list-item
+          class="mat-list-item mat-2-line mat-list-item-avatar mat-list-item-with-avatar"
+          ><div class="mat-list-item-content">
+            <div class="mat-list-item-ripple mat-ripple"></div>
+            <mat-icon
+              class="mat-icon notranslate mat-list-icon material-icons mat-icon-no-color"
+              mat-list-icon=""
+              role="img"
+              aria-hidden="true"
+              >music_note</mat-icon
+            >
+            <div class="mat-list-text">
+              <h4 class="mat-line" mat-line="">Walking Back Home</h4>
+              <p class="mat-line" mat-line="">by Vira Talisa · 2 minutes</p>
+            </div>
+          </div></mat-list-item
+        ></mat-list
+      ></mat-card-content
+    ><mat-card-actions class="mat-card-actions"
+      ><button
+        color="warn"
+        mat-button=""
+        class="mat-button mat-button-base mat-warn"
+      >
+        <span class="mat-button-wrapper" (click)="deleteCard(i)">DELETE</span>
+        <div class="mat-button-ripple mat-ripple"></div>
+        <div class="mat-button-focus-overlay"></div></button
+      ><button mat-button="" class="mat-button mat-button-base">
+        <span class="mat-button-wrapper" (click)="editButton()">EDIT</span>
+        <div class="mat-button-ripple mat-ripple"></div>
+        <div class="mat-button-focus-overlay"></div></button></mat-card-actions
+  ></mat-card>
+</div>

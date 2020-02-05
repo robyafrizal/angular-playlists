@@ -17,9 +17,11 @@ import { MatListModule } from "@angular/material/list";
 import { AppRoutingModule } from "./app-routing.module";
 
 import { AppComponent } from "./app.component";
+import { HelloComponent } from "./hello.component";
+import { BlockCardComponent } from "./block-card/block-card.component";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HelloComponent, BlockCardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

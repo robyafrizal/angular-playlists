@@ -42,3 +42,16 @@ h3 {
 .mat-list-icon {
   color: rgba(0, 0, 0, 0.54);
 }
+
+p {
+  font-family: Lato;
+}
+
+.blocksWrapper {
+  display: flex;
+  overflow: auto;
+  background-color: blue;
+  padding: 20px 0;
+  margin: 10px 0 0 0;
+  min-height: 305px;
+}
