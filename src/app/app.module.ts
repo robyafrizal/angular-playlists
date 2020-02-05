@@ -18,10 +18,10 @@ import { AppRoutingModule } from "./app-routing.module";
 
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
-import { BlockCardComponent } from "./block-card/block-card.component";
+import { PlaylistComponent } from "./playlist/playlist.component";
 
 @NgModule({
-  declarations: [AppComponent, HelloComponent, BlockCardComponent],
+  declarations: [AppComponent, HelloComponent, PlaylistComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

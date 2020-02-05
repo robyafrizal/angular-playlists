@@ -174,7 +174,10 @@
   </div>
 
   <div class="blocksWrapper">
-    <app-block-card *ngFor="let block of blocks" [blockData]="block">
+    <app-block-card
+      *ngFor="let playlist of playlists"
+      [playlistData]="playlist"
+    >
     </app-block-card>
   </div>
 </div>
