@@ -7,7 +7,7 @@ import { PlaylistData } from "./playlist-data";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-  playlists: Playlist[] = [
+  playlists: PlaylistData[] = [
     {
       name: "Kopikustik",
       totalDuration: 5,
