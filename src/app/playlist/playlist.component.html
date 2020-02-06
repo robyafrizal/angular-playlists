@@ -28,10 +28,10 @@
               >music_note</mat-icon
             >
             <div class="mat-list-text">
-              <h4 class="mat-line">{{ playlistData.songs.title }}</h4>
+              <h4 class="mat-line">{{ playlistData.songs[0].title }}</h4>
               <p class="mat-line">
-                by {{ playlistData.songs.artist }} ·
-                {{ playlistData.songs.duration }} minutes
+                by {{ playlistData.songs[0].artist }} ·
+                {{ playlistData.songs[0].duration }} minutes
               </p>
             </div>
           </div></mat-list-item
@@ -48,11 +48,11 @@
             >
             <div class="mat-list-text">
               <h4 class="mat-line" mat-line="">
-                {{ playlistData.songs.title }}
+                {{ playlistData.songs[1].title }}
               </h4>
               <p class="mat-line" mat-line="">
-                by {{ playlistData.songs.artist }} ·
-                {{ playlistData.songs.duration }} minutes
+                by {{ playlistData.songs[1].artist }} ·
+                {{ playlistData.songs[1].duration }} minutes
               </p>
             </div>
           </div></mat-list-item

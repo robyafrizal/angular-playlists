@@ -173,11 +173,8 @@
     ></mat-card>
   </div>
 
-  <div class="blocksWrapper">
-    <app-block-card
-      *ngFor="let playlist of playlists"
-      [playlistData]="playlist"
-    >
-    </app-block-card>
+  <div class="playlistsWrapper">
+    <app-playlist *ngFor="let playlist of playlists" [playlistData]="playlist">
+    </app-playlist>
   </div>
 </div>

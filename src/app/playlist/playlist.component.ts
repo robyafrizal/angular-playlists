@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { Playlist } from "../playlist";
+import { PlaylistData } from "../playlist-data";
 
 @Component({
   selector: "app-playlist",
@@ -7,7 +7,7 @@ import { Playlist } from "../playlist";
   styleUrls: ["./playlist.component.css"]
 })
 export class PlaylistComponent implements OnInit {
-  @Input() playlistData: Playlist;
+  @Input() playlistData: PlaylistData;
 
   constructor() {}
 
