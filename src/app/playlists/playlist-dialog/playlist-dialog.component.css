@@ -1,0 +1,10 @@
+.full-width {
+  width: 100%;
+}
+.action-btn {
+  text-align: right;
+}
+.dialog-action-button {
+  -webkit-box-pack: center;
+  justify-content: center;
+}

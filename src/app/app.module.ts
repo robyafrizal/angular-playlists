@@ -1,44 +1,13 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { FormsModule } from "@angular/forms";
-import { HttpModule } from "@angular/http";
 
-//Material Section
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatButtonModule, MatCheckboxModule } from "@angular/material";
-import { MatSidenavModule } from "@angular/material/sidenav";
-import { MatToolbarModule } from "@angular/material/toolbar";
-import { MatCardModule } from "@angular/material/card";
-import { MatIconModule } from "@angular/material/icon";
-import { MatDividerModule } from "@angular/material/divider";
-import { MatListModule } from "@angular/material/list";
-
-//Routing
 import { AppRoutingModule } from "./app-routing.module";
-
 import { AppComponent } from "./app.component";
-import { HelloComponent } from "./hello.component";
-import { PlaylistComponent } from "./playlist/playlist.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
-  declarations: [AppComponent, HelloComponent, PlaylistComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpModule,
-
-    //Material
-    BrowserAnimationsModule,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatCardModule,
-    MatIconModule,
-    MatListModule,
-    MatDividerModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
